@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>璞舍 · 极简主义住宅设计 | INTERIOR DESIGN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">璞舍</a>
+    <div class="nav-links">
+      <a href="#overview" class="nav-link">项目概览</a>
+      <a href="#viewer" class="nav-link">3D空间</a>
+      <a href="#schemes" class="nav-link">设计方案</a>
+      <a href="#materials" class="nav-link">材质系统</a>
+    </div>
+    <button class="nav-toggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-label">INTERIOR DESIGN · 2026</p>
+    <h1 class="hero-title">璞舍</h1>
+    <p class="hero-subtitle">在克制与温度之间，重新定义家的尺度</p>
+    <div class="hero-actions">
+      <a href="#viewer" class="btn btn-primary">探索空间</a>
+      <a href="#schemes" class="btn btn-outline">查看方案</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span class="scroll-text">向下滚动</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="overview section" id="overview">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">项目概览</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="overview-grid">
+      <div class="overview-text">
+        <p class="overview-desc">位于上海市中心的一处 180㎡ 平层住宅，业主是一对年轻夫妇，希望家既能承载日常的烟火气，又保留美术馆般的静谧与秩序。设计以「减法」为原则，去除冗余装饰，让光线、材质和空间本身成为主角。</p>
+        <div class="overview-meta">
+          <div class="meta-item">
+            <span class="meta-label">面积</span>
+            <span class="meta-value">180㎡</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">户型</span>
+            <span class="meta-value">三室两厅</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">风格</span>
+            <span class="meta-value">极简主义</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">工期</span>
+            <span class="meta-value">120天</span>
+          </div>
+        </div>
+      </div>
+      <div class="overview-stats">
+        <div class="stat-card">
+          <span class="stat-number" data-count="3">0</span>
+          <span class="stat-label">居室空间</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="42">0</span>
+          <span class="stat-label">定制家具件数</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="7">0</span>
+          <span class="stat-label">材质种类</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="96">0</span>
+          <span class="stat-label">设计方案版本</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="viewer section" id="viewer">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">3D 空间漫游</h2>
+      <div class="section-divider"></div>
+      <p class="section-desc">拖拽旋转视角，滚轮缩放，点击房间标签切换空间</p>
+    </div>
+  </div>
+  <div class="viewer-wrapper">
+    <div class="viewer-toolbar">
+      <button class="room-btn active" data-room="living">客厅</button>
+      <button class="room-btn" data-room="bedroom">主卧</button>
+      <button class="room-btn" data-room="kitchen">厨房</button>
+      <button class="room-btn" data-room="study">书房</button>
+    </div>
+    <div id="threeContainer" class="three-container"></div>
+    <div class="viewer-hint">拖拽旋转 · 滚轮缩放</div>
+    <div class="viewer-info" id="viewerInfo">
+      <div class="info-card">
+        <h4 id="roomName">客厅</h4>
+        <p id="roomDesc">以浅色橡木地板和艺术涂料墙面营造温润基调，整面落地窗将城市天际线引入室内。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="schemes section" id="schemes">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">设计方案</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="schemes-grid" id="schemesGrid">
+     <div class="scheme-card" data-room="living">
+        <div class="scheme-img" style="background-image: url(assets/living.png);"></div>
+        <div class="scheme-body">
+          <span class="scheme-tag">公共空间</span>
+          <h3 class="scheme-title">客厅 · 流动的光影</h3>
+          <p class="scheme-desc">LDK 一体化设计，4.2m 挑高搭配无主灯照明。整面洞石电视墙与橡木格栅构成虚实对比。</p>
+          <div class="scheme-specs">
+            <span>38㎡</span>
+            <span>南向采光</span>
+            <span>无主灯</span>
+          </div>
+        </div>
+      </div>
+     <div class="scheme-card" data-room="bedroom">
+        <div class="scheme-img" style="background-image: url(assets/bedroom.png);"></div>
+        <div class="scheme-body">
+          <span class="scheme-tag">私密空间</span>
+          <h3 class="scheme-title">主卧 · 静谧的庇护所</h3>
+          <p class="scheme-desc">微水泥墙面与木质背板结合，内嵌灯带营造悬浮感。步入式衣帽间采用通透玻璃隔断。</p>
+          <div class="scheme-specs">
+            <span>24㎡</span>
+            <span>步入式衣帽间</span>
+            <span>微水泥</span>
+          </div>
+        </div>
+      </div>
+     <div class="scheme-card" data-room="kitchen">
+        <div class="scheme-img" style="background-image: url(assets/kitchen.png);"></div>
+        <div class="scheme-body">
+          <span class="scheme-tag">功能空间</span>
+          <h3 class="scheme-title">厨房 · 烟火与秩序</h3>
+          <p class="scheme-desc">U 型布局搭配岩板岛台，隐藏式收纳系统让所有器具有序归位。防眩射灯配合感应灯带。</p>
+          <div class="scheme-specs">
+            <span>12㎡</span>
+            <span>U型布局</span>
+            <span>岩板岛台</span>
+          </div>
+        </div>
+      </div>
+     <div class="scheme-card" data-room="study">
+        <div class="scheme-img" style="background-image: url(assets/study.png);"></div>
+        <div class="scheme-body">
+          <span class="scheme-tag">精神空间</span>
+          <h3 class="scheme-title">书房 · 沉浸的角落</h3>
+          <p class="scheme-desc">整面书墙采用悬浮层板，可调节角度。百叶帘将自然光切割成温柔的光影线条。</p>
+          <div class="scheme-specs">
+            <span>15㎡</span>
+            <span>悬浮书墙</span>
+            <span>百叶光影</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="materials section" id="materials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">材质系统</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="materials-showcase">
+      <div class="material-card">
+        <div class="material-swatch" style="background: #f5efe6;"></div>
+        <div class="material-info">
+          <h4>艺术涂料</h4>
+          <p>微水泥质感墙面，手工批刮纹理</p>
+          <span class="material-use">墙面 · 天花板</span>
+        </div>
+      </div>
+      <div class="material-card">
+        <div class="material-swatch" style="background: #d4c4a8;"></div>
+        <div class="material-info">
+          <h4>橡木</h4>
+          <p>浅色烟熏橡木，开放式格栅与实木拼接</p>
+          <span class="material-use">地板 · 格栅 · 柜体</span>
+        </div>
+      </div>
+      <div class="material-card">
+        <div class="material-swatch" style="background: #c8b8a8;"></div>
+        <div class="material-info">
+          <h4>洞石</h4>
+          <p>自然孔洞纹理，保留原始质感</p>
+          <span class="material-use">电视墙 · 背景墙</span>
+        </div>
+      </div>
+      <div class="material-card">
+        <div class="material-swatch" style="background: #2c2c2c;"></div>
+        <div class="material-info">
+          <h4>岩板</h4>
+          <p>哑面深色岩板，耐高温易清洁</p>
+          <span class="material-use">厨房台面 · 岛台</span>
+        </div>
+      </div>
+      <div class="material-card">
+        <div class="material-swatch" style="background: #e8ddd0;"></div>
+        <div class="material-info">
+          <h4>亚麻布艺</h4>
+          <p>天然亚麻面料，透气亲肤</p>
+          <span class="material-use">窗帘 · 床品 · 软包</span>
+        </div>
+      </div>
+      <div class="material-card">
+        <div class="material-swatch" style="background: #8a7a6a;"></div>
+        <div class="material-info">
+          <h4>铜质</h4>
+          <p>拉丝黄铜，氧化做旧处理</p>
+          <span class="material-use">灯具 · 五金 · 收口条</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta section">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="cta-title">想拥有同样的空间？</h2>
+      <p class="cta-desc">从概念设计到施工落地，我们为每一寸空间倾注思考</p>
+      <a href="#" class="btn btn-primary btn-large">预约设计师</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">璞舍</span>
+        <p>极简主义住宅设计 · 让空间回归本质</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">设计理念</a>
+        <a href="#">过往项目</a>
+        <a href="#">联系我们</a>
+      </div>
+      <p class="footer-copy">© 2026 璞舍设计 · All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="js/three-scene.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
